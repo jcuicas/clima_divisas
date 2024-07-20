@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima | Divisas</title>
+</head>
+<body>
+  <header>
+    <h1>Pronosticos del clima</h1>
+    <h2>Cotizaciones de divisas</h2>
+  </header>
+  <main>
+    <section id="fecha-hora">
+      <div>
+        <h3>Fecha: <span id="fecha"></span></h3>
+      </div>
+      <div>
+        <h4>Hora: <span id="hora"></span></h4>
+      </div>
+    </section>
+    <section id="clima">
+      <div>
+        <h2 class="titulo" id="ciudad"></h2>
+      </div>
+      <div class="flexbox">
+        <h3 class="titulo" id="temp"></h3>
+        <h3 class="titulo">&nbsp;&deg;C</h3>
+      </div>
+      <div id="contenedor-icono">
+        <img id="icono-clima" src="" alt="Icono del clima">
+      </div>
+      <div>
+        <h4 id="descripcion" class="formato-desc"></h4>
+      </div>
+      <article id="detalles-clima">
+        <div class="flexbox-detalles">
+          <h4>Viento:</h4>
+          <h4 id="viento"></h4>
+        </div>
+        <div class="flexbox-detalles">
+          <h4>Presión:</h4>
+          <h4 id="presion"></h4>
+        </div>
+        <div class="flexbox-detalles">
+          <h4>Humedad:</h4>
+          <h4 id="humedad"></h4>
+        </div>
+      </article>
+    </section>
+    <section id="divisas">
+      <div>
+        <h2 class="titulo">Tasa de cambio</h2>
+      </div>
+      <article class="flexbox-detalles" id="cambio-vzl">
+        <h3>1 USD</h3>
+        <h3 id="bolivares"></h3>
+      </article>
+      <article id="cambio-paises">
+        <div class="flexbox-detalles" id="cambio-col">
+          <h4>1 USD</h4>
+          <h4 id="pesos-col"></h4>
+        </div>
+        <div class="flexbox-detalles" id="cambio-bra">
+          <h4>1 USD</h4>
+          <h4 id="real-bra"></h4>
+        </div>
+        <div class="flexbox-detalles" id="cambio-peru">
+          <h4>1 USD</h4>
+          <h4 id="sol-peru"></h4>
+        </div>
+      </article>
+      <article id="historial">
+        <h3>Historial VES</h3>
+        <div class="flexbox-detalles" id="semana">
+          <h4>Sem. pasada:</h4>
+          <h4 id="sem-prev"></h4>
+        </div>
+        <div class="flexbox-detalles" id="mes">
+          <h4>Mes pasado:</h4>
+          <h4 id="mes-prev"></h4>
+        </div>
+        <div class="flexbox-detalles" id="anio">
+          <h4>Año pasado:</h4>
+          <h4 id="anio-prev"></h4>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <h5>&copy; Todos los derechos reservados.</h5>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

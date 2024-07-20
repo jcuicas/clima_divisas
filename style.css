@@ -1,0 +1,50 @@
+:root {
+  --bgcolor-fondo: linear-gradient(to top right, #808080, #E6E6E6);
+  --bgcolor-container: linear-gradient(to top right, #B066FE, #63E2FF);
+  --width-container: 70%;
+  --width-container-item: 45%;  
+}
+
+body {
+  background-image: var(--bgcolor-fondo);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+header {
+  background-image: var(--bgcolor-container);
+  width: var(--width-container);
+  margin: 0 auto;
+  border: 3px solid #00008B;
+  border-radius: .5rem;
+}
+
+#fecha-hora {
+  background-image: var(--bgcolor-container);
+  width: var(--width-container);
+  margin: 1rem auto;
+  border-radius: .5rem;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 139, .5);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#clima, #divisas {
+  background-image: var(--bgcolor-container);
+  width: var(--width-container-item);
+  margin: 1rem auto;
+  border: 3px solid #778899;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.flexbox-detalles {
+  display: flex;
+  justify-content: space-evenly;
+}
